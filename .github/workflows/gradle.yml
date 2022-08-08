@@ -33,7 +33,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Build and Push Docker Image
-      uses: github_actions_project/docker-build-push@v4
+      uses: ./docker-build-push@v4
       with:
         image: pagidi1989/github_actions_project
         registry: docker.io
