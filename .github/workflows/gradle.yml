@@ -32,10 +32,10 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-#     - name: Build and Push Docker Image
+    - name: Build and Push Docker Image
 #       uses: mr-smithers-excellent/docker-build-push@v4
-#       with:
-#         image: pagidi1989/github_actions_project
-#         registry: docker.io
-#         username: ${{ secrets.DOCKER_USERNAME}}
-#         password: ${{ secrets.DOCKER_PASSWORD}}
+      with:
+        image: pagidi1989/github_actions_project
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME}}
+        password: ${{ secrets.DOCKER_PASSWORD}}
